@@ -1,7 +1,7 @@
-+flask
-+Werkzeug
-+Jinja2
-+itsdangerous
-+markupsafe
-+requests
-+gunicorn
+flask
+Werkzeug
+Jinja2
+itsdangerous
+markupsafe
+requests
+gunicorn
