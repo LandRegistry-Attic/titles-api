@@ -1,2 +1,1 @@
-# titles-api
-Titles API
+# Titles API
