@@ -7,6 +7,6 @@ def index():
 @app.route('/validate/<titlenumber>', methods=["GET"])
 def validateTitle(titlenumber):
     if titlenumber:
-        return true
+        return "Valid title"
     else:
-        return false
+        return "Invalid title"
