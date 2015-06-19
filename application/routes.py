@@ -8,14 +8,6 @@ def index():
 
 @app.route('/validate/<titlenumber>', methods=["GET"])
 def validateTitle(titlenumber):
-    return_code = validate_title(titlenumber)
-    response = ""
-
-    if return_code == "1":
-        response = "Valid Title"
-    elif return_code == "2":
-        response = "Unknown Title"
-    elif return_code == "3":
-        response = "Invalid Title"
-    else:
-        response = "Title Validation Error"
+    request = validate_title(titlenumber)
+    response = json.dumps(request)
+    return response
