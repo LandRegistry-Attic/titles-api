@@ -1,5 +1,6 @@
-from application import app
+import json
 
+from application import app
 from .utils import validate_title
 
 @app.route('/', methods=["GET"])
