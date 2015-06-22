@@ -8,4 +8,11 @@ def validate_title(title_number):
     else:
         data = response.json()
 
+        if data.validation_result = 1:
+            data.error_message == "Valid title number"
+        elif data.validation_result = 2:
+            data.error_message == "Title number does not exist"
+        else:
+            data.error_message == "Invalid title number"
+
     return data
