@@ -1,4 +1,7 @@
+import json
+
 from application import app
+from .utils import validate_title
 
 @app.route('/', methods=["GET"])
 def index():
@@ -6,7 +9,6 @@ def index():
 
 @app.route('/validate/<titlenumber>', methods=["GET"])
 def validateTitle(titlenumber):
-    if titlenumber:
-        return "Valid title"
-    else:
-        return "Invalid title"
+    request = validate_title(titlenumber)
+    response = json.dumps(request)
+    return response
