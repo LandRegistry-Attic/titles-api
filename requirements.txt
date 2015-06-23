@@ -5,3 +5,5 @@ itsdangerous
 markupsafe
 requests
 gunicorn
+pytest==2.7.1
+pytest-cov==1.8.1
